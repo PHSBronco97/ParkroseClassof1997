@@ -1,0 +1,141 @@
+
+.lightbox-wrap * {
+    margin: 0;
+    padding: 0;
+}
+.lightbox-mask {
+    background: rgba(0, 0, 0, 0) url("../resource/opacity.png") repeat scroll 0 0;
+    cursor: pointer;
+    display: none;
+    left: 0;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+.lightbox-wrap .lightbox-skin, .lightbox-wrap .lightbox-outer, .lightbox-wrap .lightbox-inner {
+    height: auto;
+    margin: auto;
+    width: auto;
+}
+.lightbox-loading, .lightbox-skin .lightbox-closeBtn, .lightbox-skin .lightbox-prevBtn span, .lightbox-skin .lightbox-nextBtn span {
+    background: rgba(0, 0, 0, 0) url("../resource/lightbox_sprite.png") repeat scroll 0 0;
+}
+.lightbox-wrap .lightbox-skin {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+.lightbox-skin .lightbox-closeBtn {
+    background-position: 0 0;
+    cursor: pointer;
+    height: 34px;
+    margin-right: -13px;
+    margin-top: -13px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 36px;
+    z-index: 1060;
+}
+.lightbox-skin .lightbox-nav {
+    background: transparent url("../resource/transparent.png") repeat scroll 0 0;
+    cursor: pointer;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 40%;
+    z-index: 1040;
+}
+.lightbox-skin .lightbox-nav:hover span {
+    visibility: visible;
+}
+.lightbox-skin .lightbox-nav span {
+    height: 34px;
+    margin-top: -17px;
+    position: absolute;
+    top: 50%;
+    visibility: hidden;
+    width: 36px;
+    z-index: 1040;
+}
+.lightbox-skin .lightbox-prevBtn {
+    left: 0;
+}
+.lightbox-skin .lightbox-prevBtn span {
+    background-position: 0 -36px;
+    left: 20px;
+}
+.lightbox-skin .lightbox-nextBtn {
+    right: 0;
+}
+.lightbox-skin .lightbox-nextBtn span {
+    background-position: 0 -72px;
+    right: 20px;
+}
+.lightbox-loading {
+    background-position: 0 -108px;
+    left: 50%;
+    margin-left: -22px;
+    margin-top: -22px;
+    position: absolute;
+    top: 50%;
+    z-index: 1050;
+}
+.lightbox-loading div {
+    background: rgba(0, 0, 0, 0) url("../resource/lightbox_loading.gif") no-repeat scroll center center;
+    height: 44px;
+    width: 44px;
+}
+.lightbox-wrap {
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index: 1010;
+}
+.lightbox-wrap .lightbox-outer, .lightbox-wrap .lightbox-skin {
+    position: relative;
+}
+.lightbox-wrap .lightbox-skin, .lightbox-wrap .lightbox-outer, .lightbox-wrap .lightbox-image {
+    background-color: white;
+    border-radius: 10px;
+}
+.lightbox-wrap .lightbox-title {
+    color: #fff;
+    font: 16px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
+    position: relative;
+    text-shadow: none;
+    width: 80%;
+    z-index: 1030;
+}
+.lightbox-wrap .lightbox-title-over {
+    background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    bottom: 0;
+    color: #fff;
+    left: 0;
+    line-height: 40px;
+    min-height: 40px;
+    position: absolute;
+    vertical-align: middle;
+    width: 100%;
+}
+.lightbox-wrap .lightbox-title-over p {
+    float: left;
+    padding-top: 5px;
+}
+.lightbox-wrap .lightbox-title p {
+    padding-left: 10px;
+    color: white;
+    font-size: 15px;
+    line-height: 29px;
+}
+.lightbox-wrap .lightbox-title span {
+    float: right;
+    padding-right: 10px;
+}
+.lightbox-wrap .lightbox-title-inside {
+    padding-bottom: 5px;
+}
+.lightbox-wrap .lightbox-outer + .lightbox-title-inside {
+    padding-bottom: 0;
+    padding-top: 5px;
+}
